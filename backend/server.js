@@ -18,9 +18,11 @@ connection.once("open", () => {
 
 const flightsRouter = require("./Routes/flights");
 const usersRouter = require("./Routes/users");
+const hotelsRouter = require("./Routes/hotels")
 
 app.use('/flights', flightsRouter)
 app.use('/users', usersRouter)
+app.use('/hotels', hotelsRouter)
 
 app.listen(port, () => {
   console.log(`Server is running on ${port}`);

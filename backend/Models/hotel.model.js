@@ -7,7 +7,7 @@ const hotelSchema = new Schema({
   city: {type: String, required: true},
   description: { type: String, required: true },
   room: { type: String, required: true },
-  class: { type: String, required: true },
+  expense: { type: String, required: true },
   price: { type: Number, required: true },
   duration: { type: Number, required: true },
   date: { type: Date, required: true },
@@ -18,3 +18,14 @@ const hotelSchema = new Schema({
 const Hotel = mongoose.model('Hotel', hotelSchema);
 
 module.exports = Hotel;
+
+// {
+//     "username" : "neil",
+//     "city" : "Mumbai",
+//     "description" : "",
+//     "room" : "",
+//     "expense": "",
+//     "price" : ,
+//     "duration": ,
+//     "date" :
+// }
