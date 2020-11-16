@@ -10,6 +10,7 @@ const userSchema = new Schema({
     trim: true,
     minlength: 3
   },
+  googleId: String
 }, {
   timestamps: true,
 });
