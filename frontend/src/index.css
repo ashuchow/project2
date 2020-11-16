@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.buttonContainer{
+  text-align: center;  
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}

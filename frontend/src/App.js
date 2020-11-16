@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Confirm from "./Screens/ConfirmScreen";
 import Home from "./Screens/Home";
-import Navbar from "./components/navbar.component";
+import Navbar from "./Screens/navbar.component";
 import bookFlight from "./Screens/FlightBook";
 import searchFlight from "./Screens/FlightSearch";
 import resultFlight from "./Screens/FlightResult";

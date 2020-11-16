@@ -19,9 +19,6 @@ export default class navbar extends Component {
           <Link to="/up" className="nav-link">User Profile</Link>
           </li>
           <li className="navbar-item">
-          <Link to="/pymnt" className="nav-link">Checkout</Link>
-          </li>
-          <li className="navbar-item">
           <Link to="/us" className="nav-link">Create User/Sign In</Link>
           </li>
         </ul>
