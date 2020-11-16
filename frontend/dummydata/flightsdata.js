@@ -29,5 +29,15 @@ export const flights = [
     price: 8000,
     date: "22-10-2020",
   },
+  {
+    username: "Soham",
+    fromCity: "Gurgaon",
+    toCity: "Mumbai",
+    seat: "Window",
+    airline: "Indigo",
+    duration: 140,
+    price: 6000,
+    date: "22-10-2020",
+  },
 ];
 
