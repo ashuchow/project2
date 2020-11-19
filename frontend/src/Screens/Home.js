@@ -5,24 +5,31 @@ import {Button} from 'react-bootstrap';
 import { ListGroup } from 'react-bootstrap'
 function Home() {
     return (
-<div className>
+<div>
         <div className="header">
-          <h1>Travel App</h1>
+          <h1>Travel-It</h1>
            <p>We get you the Cheapest Deals</p>
-        </div>
+        
 
 
-        <div className = "buttonContainer" >
-        <Link to="/sf">
-            <Button variant="danger">
-                 BOOK FLIGHTS
-            </Button> {' '}
-        </Link>
-        <Link to="/sh">
-            <Button variant="danger">
-                 BOOK HOTELS
-            </Button>
-        </Link>
+            <div className = "buttonContainer" >
+            <Link to="/sf">
+                <Button variant="danger">
+                    BOOK FLIGHTS
+                </Button> {' '}
+            </Link>
+            <Link to="/sh">
+                <Button variant="danger">
+                    BOOK HOTELS
+                </Button>
+            </Link>
+            </div>
+            <div className = "homeLogo">
+            <img src="https://steemitimages.com/DQmZ6NBKWQYcEgNfxXmrRXjnFijcerBJmnFaPcGZcfrKsTo/Detail%20TI_1.png" alt="App Logo"></img>
+
+
+
+            </div>
         </div>
 
 
