@@ -8,7 +8,7 @@ function Home() {
 <div>
         <div className="header">
           <h1>Travel-It</h1>
-           <p>We get you the Cheapest Deals</p>
+           <p>BOOKINGS MADE EASY</p>
         
 
 

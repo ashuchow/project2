@@ -29,7 +29,7 @@ function userSignIn() {
                     Do not have an account?
                 </li>
                 <li>
-                    <Link to = "/register" className ="button secondary text-center">Create a new Account</Link>
+                    <Link to = "/usu" className ="button secondary text-center">Create a new Account</Link>
                 </li>
 
             </ul>
