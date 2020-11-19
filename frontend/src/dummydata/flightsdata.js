@@ -1,5 +1,6 @@
 export const flights = [
   {
+    id: 1,
     username: "neil",
     fromCity: "Mumbai",
     toCity: "Delhi",
@@ -10,6 +11,7 @@ export const flights = [
     date: "22-10-20",
   },
   {
+    id: 2,
     username: "dev",
     fromCity: "Kolkata",
     toCity: "Bangalore",
@@ -20,6 +22,7 @@ export const flights = [
     date: "23-10-2020",
   },
   {
+    id: 3,
     username: "aditya",
     fromCity: "Delhi",
     toCity: "Chennai",
@@ -30,6 +33,7 @@ export const flights = [
     date: "22-10-2020",
   },
   {
+    id: 4,
     username: "Soham",
     fromCity: "Gurgaon",
     toCity: "Mumbai",
