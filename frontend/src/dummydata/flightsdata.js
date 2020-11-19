@@ -11,7 +11,7 @@ export const flights = [
   },
   {
     username: "dev",
-    fromCity: "Kolkata",
+    fromCity: "Ludhiana",
     toCity: "Bangalore",
     seat: "Aisle",
     airline: "Jet",
