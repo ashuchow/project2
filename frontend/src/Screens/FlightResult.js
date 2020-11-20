@@ -1,21 +1,32 @@
 import React, {useState, useEffect} from 'react'
-import { Link } from 'react-router-dom';
+
+import { useLocation, Link } from 'react-router-dom';
 import axios from 'axios'
 
 // const amadeus = axios.create({
 //     baseURL: 'http://localhost:5000/amadeus/citysearch'
 // })
-function ResultFlight() {
+const ResultFlight = () => {
     const [flights, setFlights] = useState([])
     const [isLoading, setIsLoading] = useState(true)
+    //const [arrival, setArrival] = useState("")
+    //const [departure, setDeparture] = useState("")
+    // let state = useLocation()
+    // console.log(state)
+    let arrival = useLocation().data.arrival
+    let departure = useLocation().data.departure
+    console.log(arrival)
+    console.log(departure)
     useEffect(() => {
         // const fetchCity = async () => {
         //     const result = await axios(`http://localhost:5000/amadeus/citysearch?keyword=mumbai`)
         //     console.log(result.data.data)
         // }
         // fetchCity()
+        // const { bf } = this.props.match.params
+        // const { data } = this.props.location
         const fetchFlights = async () => {
-            const result = await axios.post(`http://localhost:5000/amadeus/date?departure=2020-12-20&arrival=2020-12-21&locationDeparture=BOM&locationArrival=DEL`)
+            const result = await axios.post(`http://localhost:5000/amadeus/date?departure=2020-12-20&arrival=2020-12-21&locationDeparture=${departure}&locationArrival=${arrival}`)
             console.log(result.data.data)
             setFlights(result.data.data)
             setIsLoading(false)
