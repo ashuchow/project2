@@ -7,7 +7,7 @@ import Home from "./Screens/Home";
 import Navbar from "./Screens/navbar.component";
 import bookFlight from "./Screens/FlightBook";
 import searchFlight from "./Screens/FlightSearch";
-import resultFlight from "./Screens/FlightResult";
+import ResultFlight from "./Screens/FlightResult";
 import bookHotel from "./Screens/HotelBook";
 import resultHotel from "./Screens/HotelResults";
 import searchHotel from "./Screens/HotelsSearch";
@@ -27,7 +27,7 @@ function App() {
           <Route path="/sf" component={searchFlight} />
           <Route path="/sh" component={searchHotel} />
           <Route path="/rh" component={resultHotel} />
-          <Route path="/rf" component={resultFlight} />
+          <Route path="/rf" component={ResultFlight} />
           <Route path="/cnf" component={Confirm} />
           <Route path="/pymnt" component={Payment} />
           <Route path="/up" component={userProfile} />
