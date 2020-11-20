@@ -14,6 +14,7 @@ import searchHotel from "./Screens/HotelsSearch";
 import Payment from "./Screens/PaymentScreen";
 import userProfile from "./Screens/UserProfile";
 import userSignIn from "./Screens/UserSignIn";
+import userSignup from "./Screens/UserSignup";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/pymnt" component={Payment} />
           <Route path="/up" component={userProfile} />
           <Route path="/us" component={userSignIn} />
+          <Route path="/usu" component={userSignup} />
         </Switch>
       </div>
     </Router>
