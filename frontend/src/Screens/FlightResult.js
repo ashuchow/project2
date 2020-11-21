@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import {Table} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 
 function resultFlight() {
     return (
@@ -13,6 +14,11 @@ function resultFlight() {
       <th>Flight Name</th>
       <th>Arrival City</th>
       <th>Departure City</th>
+      <th>Arrival Time</th>
+      <th>Departure Time</th>
+      <th>Date</th>
+      <th>Price</th>
+      <th>Book</th>
     </tr>
   </thead>
   <tbody>
@@ -20,13 +26,28 @@ function resultFlight() {
       <td>1</td>
       <td>Mark</td>
       <td>Otto</td>
-      <td>@mdo</td>
+      <td>Lmao</td>
+      <td>Lmao</td>
+      <td>Lmao</td>
+      <td>Lmao</td>
+      <td>Lmao</td>
+      <td><Link to="/sf">
+                <Button variant="danger">
+                    BOOK 
+                </Button>
+            </Link></td>
     </tr>
     <tr>
       <td>2</td>
       <td>Jacob</td>
       <td>Thornton</td>
-      <td>@fat</td>
+      <td>
+      <Link to="/sf">
+                <Button variant="danger">
+                    BOOK
+                </Button>
+                </Link>
+      </td>
     </tr>
     <tr>
       <td>3</td>
@@ -36,10 +57,6 @@ function resultFlight() {
   </tbody>
 </Table>
         
-        </div>
-        <div>
-            <h1>Show Flight Search Results</h1>
-            <Link to="/bf" className="nav-link">Flight XYZ</Link>
         </div>
 
 
