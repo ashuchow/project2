@@ -31,7 +31,7 @@ function resultFlight() {
       <td>Lmao</td>
       <td>Lmao</td>
       <td>Lmao</td>
-      <td><Link to="/sf">
+      <td><Link to="/bf">
                 <Button variant="danger">
                     BOOK 
                 </Button>
@@ -42,7 +42,7 @@ function resultFlight() {
       <td>Jacob</td>
       <td>Thornton</td>
       <td>
-      <Link to="/sf">
+      <Link to="/bf">
                 <Button variant="danger">
                     BOOK
                 </Button>
