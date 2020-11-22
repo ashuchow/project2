@@ -2,15 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Form} from 'react-bootstrap';
-<<<<<<< HEAD
 import {Button} from 'react-bootstrap';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
-=======
-//import DatePicker from "react-datepicker";
-//import "react-datepicker/dist/react-datepicker.css";
-
->>>>>>> ccf29e55b56dd83bb2c669d615204928fa3bbe5c
 
 const searchFlight = makeStyles((theme) => ({
     container: {
@@ -63,9 +57,9 @@ const searchFlight = makeStyles((theme) => ({
         <form className={classes.container} noValidate>
             <TextField
             id="date"
-            label="Birthday"
+            label="FlightDate"
             type="date"
-            defaultValue="2017-05-24"
+            defaultValue="2020-05-24"
             className={classes.textField}
             InputLabelProps={{
             shrink: true,
