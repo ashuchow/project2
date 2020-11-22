@@ -2,12 +2,31 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Form} from 'react-bootstrap';
+<<<<<<< HEAD
+import {Button} from 'react-bootstrap';
+import TextField from '@material-ui/core/TextField';
+import { makeStyles } from '@material-ui/core/styles';
+=======
 //import DatePicker from "react-datepicker";
 //import "react-datepicker/dist/react-datepicker.css";
 
+>>>>>>> ccf29e55b56dd83bb2c669d615204928fa3bbe5c
 
+const searchFlight = makeStyles((theme) => ({
+    container: {
+      display: 'flex',
+      flexWrap: 'wrap',
+    },
+    textField: {
+      marginLeft: theme.spacing(1),
+      marginRight: theme.spacing(1),
+      width: 200,
+    },
+  }));
   
-function searchFlight() {
+  export default function DatePickers() {
+    const classes = searchFlight();
+  
 
 
     return (
@@ -41,11 +60,30 @@ function searchFlight() {
     </Form>    
         </div>
         <div>
-        <Link to="/rf" className="nav-link">Results</Link>
+        <form className={classes.container} noValidate>
+            <TextField
+            id="date"
+            label="Birthday"
+            type="date"
+            defaultValue="2017-05-24"
+            className={classes.textField}
+            InputLabelProps={{
+            shrink: true,
+            }}
+        />
+        </form>
+        
+            <div>
+            <Link to="/rf">
+                    <Button variant="danger">
+                        Search 
+                    </Button>
+                </Link>
+        
+            </div>
         </div>
 
     </div>
     )
 }
 
-export default searchFlight

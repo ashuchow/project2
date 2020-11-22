@@ -1,11 +1,17 @@
-import React from 'react'
+import React, {Component} from 'react'
 import { Link } from 'react-router-dom';
 import {Table} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+import flightTile from '../components/flightTile';
 
-function resultFlight() {
+
+
+class resultFlight extends Component {
+  render(){
     return (
     <div>
+<<<<<<< HEAD
+=======
         <div>
         <Table striped bordered hover>
   <thead>
@@ -56,12 +62,21 @@ function resultFlight() {
     </tr>
   </tbody>
 </Table>
+>>>>>>> ccf29e55b56dd83bb2c669d615204928fa3bbe5c
         
-        </div>
+    <flightTile flightname = "Jet Airways 11" acity = "kolkata" dcity = " New Delhi"
+    atime = "11:30" dtime = "3:30" date = "11.11.20" price = "Rs. 6000"/>
+    
+    <flightTile flightname = "Jet Airways 11" acity = "kolkata" dcity = " New Delhi"
+    atime = "11:30" dtime = "3:30" date = "11.11.20" price = "Rs. 6000"/>
+    
+        
+      
 
 
     </div>
-    )
+    );
+}
 }
 
 export default resultFlight
