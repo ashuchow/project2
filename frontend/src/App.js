@@ -15,6 +15,7 @@ import Payment from "./Screens/PaymentScreen";
 import userProfile from "./Screens/UserProfile";
 import userSignIn from "./Screens/UserSignIn";
 import userSignup from "./Screens/UserSignup";
+import flightTile from "./components/flightTile";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
           <Route path="/sf" component={searchFlight} />
           <Route path="/sh" component={searchHotel} />
           <Route path="/rh" component={resultHotel} />
-          <Route path="/rf" component={resultFlight} />
+          <Route path="/rf" component={flightTile} />
           <Route path="/cnf" component={Confirm} />
           <Route path="/pymnt" component={Payment} />
           <Route path="/up" component={userProfile} />
