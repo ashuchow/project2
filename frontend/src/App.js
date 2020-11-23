@@ -5,7 +5,7 @@ import "./App.css";
 import Confirm from "./Screens/ConfirmScreen";
 import Home from "./Screens/Home";
 import Navbar from "./Screens/navbar.component";
-import bookFlight from "./Screens/FlightBook";
+import BookFlight from "./Screens/FlightBook";
 import searchFlight from "./Screens/FlightSearch";
 import ResultFlight from "./Screens/FlightResult";
 import bookHotel from "./Screens/HotelBook";
@@ -22,7 +22,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/bf" component={bookFlight} />
+          <Route path="/bf" component={BookFlight} />
           <Route path="/bh" component={bookHotel} />
           <Route path="/sf" component={searchFlight} />
           <Route path="/sh" component={searchHotel} />
