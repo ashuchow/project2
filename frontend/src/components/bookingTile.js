@@ -72,9 +72,9 @@ class BookingTile extends Component {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Link to="/cnf">
+            <Link to="/pymnt">
                     <Button variant="danger">
-                        Proceed To Book 
+                        Proceed To payment 
                     </Button>
                 </Link>
         

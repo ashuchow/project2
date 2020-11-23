@@ -1,66 +1,40 @@
-import React from 'react'
+import React, {Component} from 'react'
 import { Link } from 'react-router-dom';
 import { Button } from "react-bootstrap";
-class Reservation extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        
-        numberOfTickets: 0
-      };
-  
-      this.handleInputChange = this.handleInputChange.bind(this);
-    }
-  
-    handleInputChange(event) {
-      const target = event.target;
-      const value = target.type === 'checkbox' ? target.checked : target.value;
-      const name = target.name;
-  
-      this.setState({
-        [name]: value
-      });
-    }
-  
-    render() {
-      return (
-        <div>
-            <h1>Final Booking</h1>
+import FinalBook from "../components/Tile";
 
-        
-        
-        <form>
-          <label>
+class Reservation extends Component {
+    render(){
+    return(
+    <div>
 
-            Number of Tickets:
-            <input
-              name="numberOfTickets"
-              type="number"
-              value={this.state.numberOfTickets}
-              onChange={this.handleInputChange} />
-          </label>
-          <br/>
-          <label>
-          Name(s):
-           <input type="text" name="name" />
-            <label>Age: 
-                <input type="number" age="age"/>
-            </label>
-            <label>
-                Passport/ Aadhaar Number:
-                <input type= "text" />
-            </label>
-            </label>
+    <h1>CONGRATULATIONS! YOU HAVE BOOKED YOUR FLIGHT.</h1>
+    <h2>Flight Details </h2>
+    <div>
+        <FinalBook
+          flightname="Jet Airways 11"
+          acity="Kolkata"
+          dcity=" New Delhi"
+          atime="11:30"
+          dtime="3:30"
+          date="11.11.20"
+          price="6000"
+          name="Dev"
+          phone="9903012345"
+          email="dev.ghosh@email.com"
+        />
 
-            <input type="submit" value="Submit" />
-        </form>
+
+      </div>
 
         <Link to="/" className="nav-link">Book anything else?
                 
               </Link>
-        </div>
+        
+    </div>
       );
     }
-  }
+}
+  
 export default Reservation
 

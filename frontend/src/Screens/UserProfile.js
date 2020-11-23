@@ -7,6 +7,8 @@ import Userprofile from "../components/userprofile";
 class UserProf extends Component {
   render() {
     return (
+ 
+
       <div>
         <Userprofile
         name="Dev"
