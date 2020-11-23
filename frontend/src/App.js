@@ -15,7 +15,6 @@ import Payment from "./Screens/PaymentScreen";
 import userProfile from "./Screens/UserProfile";
 import userSignIn from "./Screens/UserSignIn";
 import userSignup from "./Screens/UserSignup";
-import flightTile from "./components/flightTile";
 
 function App() {
   return (

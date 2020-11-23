@@ -44,4 +44,8 @@ class FlightTile extends Component {
   }
 }
 
+<<<<<<< HEAD
 export default FlightTile;
+=======
+export default FlightTile;
+>>>>>>> bccbb9ebb1060b782711e805991df292311eeb73
