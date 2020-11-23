@@ -1,53 +1,26 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
-import {Button} from 'react-bootstrap';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { Table } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+import Userprofile from "../components/userprofile";
 
-
-function userProfile() {
+class UserProf extends Component {
+  render() {
     return (
-        <div class="col-md-8">
-        <div class="card mb-3">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-sm-3">
-                <h6 class="mb-0">Full Name</h6>
-              </div>
-              <div class="col-sm-9 text-secondary">
-                Kenneth Valdez
-              </div>
-            </div>
-            <hr/>
-            <div class="row">
-              <div class="col-sm-3">
-                <h6 class="mb-0">Email</h6>
-              </div>
-              <div class="col-sm-9 text-secondary">
-                fip@jukmuh.al
-              </div>
-            </div>
-            <hr/>
-            <div class="row">
-              <div class="col-sm-3">
-                <h6 class="mb-0">Phone</h6>
-              </div>
-              <div class="col-sm-9 text-secondary">
-                (239) 816-9029
-              </div>
-            </div>
-            <hr/>
-            <div class="row">
-              <div class="col-sm-3">
-                <h6 class="mb-0">Address</h6>
-              </div>
-              <div class="col-sm-9 text-secondary">
-                Bay Area, San Francisco, CA
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        )
-        }
-        
-        export default userProfile
+      <div>
+        <Userprofile
+        name="Dev"
+        email="devghosh17@gmail.com"
+        phone="9831218674"
+        address="123 Road Road"
+        picture="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+  
+        />
+
+
+      </div>
+    );
+  }
+}
+
+export default UserProf;

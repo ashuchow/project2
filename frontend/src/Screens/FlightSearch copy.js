@@ -6,7 +6,7 @@ import {Button} from 'react-bootstrap';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 
-const makePayment = makeStyles((theme) => ({
+const searchFlight = makeStyles((theme) => ({
     container: {
       display: 'flex',
       flexWrap: 'wrap',
@@ -19,14 +19,14 @@ const makePayment = makeStyles((theme) => ({
   }));
   
   export default function DatePickers() {
-    const classes = makePayment();
+    const classes = searchFlight();
   
 
 
     return (
      <div>
         <div>
-            <h1></h1>
+            <h1>Search Flights</h1>
             
         </div>
         <div>
@@ -80,3 +80,5 @@ const makePayment = makeStyles((theme) => ({
     </div>
     )
 }
+
+

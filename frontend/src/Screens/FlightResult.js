@@ -10,7 +10,7 @@ class resultFlight extends Component {
       <div>
         <FlightTile
           flightname="Jet Airways 11"
-          acity="kolkata"
+          acity="Kolkata"
           dcity=" New Delhi"
           atime="11:30"
           dtime="3:30"
