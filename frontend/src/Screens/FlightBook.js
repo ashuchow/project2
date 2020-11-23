@@ -1,37 +1,27 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import {Button} from 'react-bootstrap';
-import {Card} from 'react-bootstrap';
+import { Button, Alert, Card, Modal, Breadcrumb, Table } from "react-bootstrap";
+import BookingTile from "../components/bookingTile";
 
 
 
-function bookFlight() {
+class bookFlight extends Component{
+    render() {
     return (
         <div>
-            <div>
-            <h1>Flight Details</h1>
-            </div>
-            <div>
-            <Card>
-            <Card.Header>Flight Name</Card.Header>
-            <Card.Body>
-                <Card.Title>Delhi to Kolkata</Card.Title>
-                <Card.Text>
-                Time:
-                </Card.Text>
-                <Card.Text>
-                Duration:
-                </Card.Text>
-                <Card.Text>
-                
-                
-                </Card.Text>
-                <Button variant="primary">Book</Button>
-            </Card.Body>
-            </Card>
-            </div>
+            <BookingTile 
+             flightname="Jet Airways 11"
+             acity="Kolkata"
+             dcity=" New Delhi"
+             atime="11:30"
+             dtime="3:30"
+             date="11.11.20"
+             price="Rs. 9000"
+            />
+            
         </div>
     )
+}
 }
 
 export default bookFlight

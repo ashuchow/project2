@@ -29,7 +29,7 @@ function App() {
           <Route path="/sf" component={searchFlight} />
           <Route path="/sh" component={searchHotel} />
           <Route path="/rh" component={resultHotel} />
-          <Route path="/rf" component={flightTile} />
+          <Route path="/rf" component={resultFlight} />
           <Route path="/cnf" component={Confirm} />
           <Route path="/pymnt" component={Payment} />
           <Route path="/up" component={userProfile} />
