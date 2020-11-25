@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button, Alert, Card, Modal, Breadcrumb, Table } from "react-bootstrap";
 
 
-class BookingTile extends Component {
+class FlightHistory extends Component {
   render() {
     return (
       <div>
@@ -72,11 +72,7 @@ class BookingTile extends Component {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Link to="/pymnt">
-                    <Button variant="danger">
-                        Proceed To payment 
-                    </Button>
-                </Link>
+
         
 
         </div>
@@ -86,4 +82,4 @@ class BookingTile extends Component {
   }
 }
 
-export default BookingTile;
+export default FlightHistory;

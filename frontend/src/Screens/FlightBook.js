@@ -9,6 +9,7 @@ class bookFlight extends Component{
     render() {
     return (
         <div>
+          <h1>Flight Details</h1>
             <BookingTile 
              flightname="Jet Airways 11"
              acity="Kolkata"

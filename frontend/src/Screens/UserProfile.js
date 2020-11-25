@@ -4,6 +4,8 @@ import { Table } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import Userprofile from "../components/userprofile";
 
+import FlightHistory from "../components/flighthistory";
+
 class UserProf extends Component {
   render() {
     return (
@@ -18,7 +20,18 @@ class UserProf extends Component {
         picture="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
   
         />
-
+        <h1>BOOKING HISTORY</h1>
+        <h1></h1>
+        <h1></h1>
+             <FlightHistory
+             flightname="Jet Airways 11"
+             acity="Kolkata"
+             dcity=" New Delhi"
+             atime="11:30"
+             dtime="3:30"
+             date="11.11.20"
+             price="Rs. 9000"
+            />
 
       </div>
     );
