@@ -1,39 +1,29 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import {Button} from 'react-bootstrap';
-import {Card} from 'react-bootstrap';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
-
+import BookingTile from "../components/BookingTile";
 
 function BookFlight() {
-    let flight=useLocation().data
-    console.log(flight)
-    return (
-        <div>
-            <div>
-            <h1>Flight Details</h1>
-            </div>
-            <div>
-            <Card>
-            <Card.Header>Flight Name</Card.Header>
-            <Card.Body>
-                <Card.Title>Delhi to Kolkata</Card.Title>
-                <Card.Text>
-                Time:
-                </Card.Text>
-                <Card.Text>
-                Duration:
-                </Card.Text>
-                <Card.Text>
-                
-                
-                </Card.Text>
-                <Link to={{pathname: "/pymnt", data: flight}} className="nav-link"><Button variant="primary">Book</Button></Link>
-            </Card.Body>
-            </Card>
-            </div>
-        </div>
-    )
+  let flight = useLocation().data;
+  console.log(flight);
+  return (
+    <div>
+      <BookingTile
+        flightname={flight.itineraries[0].segments[0].carrierCode}
+        flightcode= {flight.itineraries[0].segments[0].aircraft.code}
+        acity={flight.itineraries[0].segments[0].arrival.iataCode}
+        dcity={flight.itineraries[0].segments[0].departure.iataCode}
+        atime="11:30"
+        dtime="3:30"
+        date={flight.itineraries[0].segments[0].departure.at}
+        price={flight.price.grandTotal*88}
+        flight = {flight}
+      />
+    </div>
+  );
 }
-
-export default BookFlight
+//                <Link to={{pathname: "/pymnt", data: flight}} className="nav-link"><Button variant="primary">Book</Button></Link>
+export default BookFlight;
+// `${flight.itineraries[0].segments[0].carrierCode} ${flight.itineraries[0].segments[0].aircraft.code}`

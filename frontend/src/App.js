@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Confirm from "./Screens/ConfirmScreen";
+import Reservation from "./Screens/ConfirmScreen";
 import Home from "./Screens/Home";
 import Navbar from "./Screens/navbar.component";
 import BookFlight from "./Screens/FlightBook";
@@ -28,7 +28,7 @@ function App() {
           <Route path="/sh" component={searchHotel} />
           <Route path="/rh" component={resultHotel} />
           <Route path="/rf" component={ResultFlight} />
-          <Route path="/cnf" component={Confirm} />
+          <Route path="/cnf" component={Reservation} />
           <Route path="/pymnt" component={Payment} />
           <Route path="/up" component={userProfile} />
           <Route path="/us" component={userSignIn} />
