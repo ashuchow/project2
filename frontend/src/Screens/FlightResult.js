@@ -11,13 +11,15 @@ const ResultFlight = () => {
 
   let arrival = useLocation().data.arrival;
   let departure = useLocation().data.departure;
+  let date = useLocation().data.date;
   console.log(arrival);
   console.log(departure);
+  console.log(date);
   useEffect(() => {
 
     const fetchFlights = async () => {
       const result = await axios.post(
-        `http://localhost:5000/amadeus/date?departure=2020-12-23&arrival=2020-12-21&locationDeparture=${departure}&locationArrival=${arrival}`
+        `http://localhost:5000/amadeus/date?departure=${date}&locationDeparture=${departure}&locationArrival=${arrival}`
       );
       console.log(result.data.data);
       setFlights(result.data.data);
@@ -35,13 +37,14 @@ const ResultFlight = () => {
           {console.log(flight)}
           <FlightTile
           id={flight.id}
-          flightname="Jet Airways 11"
+          flightname={flight.itineraries[0].segments[0].carrierCode}
+          flightcode={flight.itineraries[0].segments[0].number}
           acity={arrival}
           dcity={departure}
           atime={flight.itineraries[0].segments[0].arrival.at}
           dtime={flight.itineraries[0].segments[0].departure.at}
           date={flight.lastTicketingDate}
-          price= {flight.price.base}
+          price= {Math.trunc(flight.price.grandTotal*88)}
           flight={flight}
         />
         </div>

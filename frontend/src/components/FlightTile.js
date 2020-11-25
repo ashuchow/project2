@@ -24,13 +24,13 @@ class FlightTile extends Component {
         <thead>
           <tr>
             <td>{this.props.id}</td>
-            <td>{this.props.flightname}</td>
+            <td>{this.props.flightname} {this.props.flightcode}</td>
             <td>{this.props.acity}</td>
             <td>{this.props.dcity}</td>
             <td>{this.props.atime}</td>
             <td>{this.props.dtime}</td>
             <td>{this.props.date}</td>
-            <td>{this.props.price} EURO</td>
+            <td>₹ {this.props.price}</td>
             <td>
               <Link to={{pathname: "/bf", data: this.props.flight}}>
                 <Button variant="danger">BOOK</Button>
