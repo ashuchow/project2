@@ -24,12 +24,13 @@ connection.once("open", () => {
 
 const flightsRouter = require("./Routes/flights");
 const usersRouter = require("./Routes/users");
-const hotelsRouter = require("./Routes/hotels")
+const hotelsRouter = require("./Routes/hotel-route")
 const amadeusRouter = require("./Routes/amadeus-routes")
+
 
 app.use('/flights', flightsRouter)
 app.use('/users', usersRouter)
-app.use('/hotels', hotelsRouter)
+app.use('/amadeus', hotelsRouter)
 app.use('/amadeus', amadeusRouter)
 
 app.listen(port, () => {
