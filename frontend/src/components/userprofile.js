@@ -6,6 +6,11 @@ import { Button } from "react-bootstrap";
 class Userprofile extends Component {
   render() {
     return (   
+      <div>
+      <div className="header">
+          <h1>User Profile</h1>
+        </div>
+
          <div className="col-md-4">
       
     <div className="d-flex flex-column align-items-center text-center">
@@ -57,6 +62,7 @@ class Userprofile extends Component {
       </div>
       
       
+      </div>
       </div>
       
     );

@@ -25,7 +25,7 @@ const searchHotel = makeStyles((theme) => ({
 
     return (
      <div>
-        <div>
+        <div className = "header">
             <h1>Search Hotels</h1>
             
         </div>

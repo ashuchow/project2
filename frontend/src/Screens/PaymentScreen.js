@@ -7,6 +7,11 @@ function Payment() {
   let flight = useLocation().data;
   console.log(flight);
   return (
+    <div>
+    <div className="header">
+          <h1>Payment</h1>
+        </div>
+
     <div className="container py-5">
       <div className="row mb-4">
         <div className="col-lg-8 mx-auto text-center">
@@ -228,6 +233,7 @@ function Payment() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

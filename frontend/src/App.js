@@ -14,6 +14,8 @@ import searchHotel from "./Screens/HotelsSearch";
 import Payment from "./Screens/PaymentScreen";
 import userProfile from "./Screens/UserProfile";
 import userSignIn from "./Screens/UserSignIn";
+import contactUs from "./Screens/Contact";
+import userSignUp from "./Screens/UserSignUp";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route path="/pymnt" component={Payment} />
           <Route path="/up" component={userProfile} />
           <Route path="/us" component={userSignIn} />
+          <Route path="/usu" component={userSignUp} />
+          <Route path="/cu" component={contactUs} />
         </Switch>
       </div>
     </Router>

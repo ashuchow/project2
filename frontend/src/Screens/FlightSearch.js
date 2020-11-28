@@ -35,7 +35,7 @@ function SearchFlight() {
   };
   return (
     <div>
-      <div>
+      <div className = "header">
         <h1>Search Flights</h1>
       </div>
       <div className="flex-container">

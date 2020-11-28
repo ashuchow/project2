@@ -3,8 +3,14 @@ import { Link } from 'react-router-dom';
 function bookHotel() {
     return (
         <div>
-            <h1>Hotel Product Page</h1>
+        <div className="header">
+          <h1>Book Hotel</h1>
+        </div>
+        
+
+        <div>
             <Link to="/pymnt" className="nav-link">Go to checkout</Link>
+        </div>
         </div>
     )
 }
