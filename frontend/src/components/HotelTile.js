@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Button, Card, CardGroup, CardImg, Breadcrumb, Table } from "react-bootstrap";
+import { Button, Card, CardDeck, CardImg, Breadcrumb, Table } from "react-bootstrap";
 
 class HotelTile extends Component {
   render() {
     return (
       <div>
-  <CardGroup>
+  <CardDeck>
   <Card>
     <Card.Img variant="top" src= {this.props.hotelimage} />
     <Card.Body>
@@ -14,23 +14,29 @@ class HotelTile extends Component {
       <Card.Text>
         {this.props.hoteldescription}
       </Card.Text>
-      <Card.Title>Address</Card.Title>
+      <Card.Title>Address:</Card.Title>
       <Card.Text>
         {this.props.hoteladdress}
+      </Card.Text>
+      <Card.Title>Price:</Card.Title>
+      <Card.Text>
+        {this.props.hotelprice}
       </Card.Text>
     </Card.Body>
     <Card.Footer>
     <Link to="/bh">
-     <Button variant="primary">Book</Button>
+                    <Button variant="danger">
+                        Book 
+                    </Button>
     </Link>
     </Card.Footer>
   </Card>
-  
  
-</CardGroup>
+</CardDeck>
+<br/>
     
        </div>
-     
+  
 
     );
   }

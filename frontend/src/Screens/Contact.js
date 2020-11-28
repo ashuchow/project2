@@ -29,7 +29,36 @@ function contactUs() {
             </Card.Body>
             </Card>
         </div>
+        {/* <div className="cardcontact">
+             <img src="https://gray-kktv-prod.cdn.arcpublishing.com/resizer/4wqUoybgM9vFxW4WMYuwNcvbzIc=/1200x675/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/XBKVWUDNAZIBHDERTLLBHIBEO4.jpg" />
+            <div className="container-contact">
+                <h4><b>Aditya Sarkar</b></h4>
+                <p>Front-End Developer</p>
+            </div>
         </div>
+        <div className="cardcontact">
+            <div className = "contactimage">
+             <img src="https://gray-kktv-prod.cdn.arcpublishing.com/resizer/4wqUoybgM9vFxW4WMYuwNcvbzIc=/1200x675/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/XBKVWUDNAZIBHDERTLLBHIBEO4.jpg" />
+             </div>
+            <div className="container-contact">
+                <h4><b>Neil Chowdhary</b></h4>
+                <p>Backend Developer</p>
+            </div>
+        </div>
+        <div className="cardcontact">
+             <img src="https://gray-kktv-prod.cdn.arcpublishing.com/resizer/4wqUoybgM9vFxW4WMYuwNcvbzIc=/1200x675/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/XBKVWUDNAZIBHDERTLLBHIBEO4.jpg" />
+            <div className="container-contact">
+                <h4><b>Dev Ghosh</b></h4>
+                <p>Front-End Developer</p>
+            </div>
+        </div> */}
+    
+    
+
+
+</div>
+
+
     )
 }
 

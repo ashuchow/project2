@@ -33,6 +33,25 @@ code {
   margin-left:25%;
   margin-right:25%;
 }
+.cardcontact {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container-contact {
+  padding: 2px 16px;
+}
+
+.contactimage {
+  width: 100%;
+}
 
 
 /* Hotels Result*/
@@ -112,4 +131,16 @@ input{
   padding: 1rem;
   border: 0.1rem whitesmoke;
   border-radius: 0.5rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.book {
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
 }
