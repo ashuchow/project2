@@ -8,6 +8,10 @@ class resultHotel extends Component {
   render() {
     return (
       <div>
+          
+            <div className="header">
+          <h1>Hotels</h1>
+        </div>
         <HotelTile
           id = "1"
           hotelname = "Taj Palace"
@@ -20,7 +24,7 @@ class resultHotel extends Component {
           id = "1"
           hotelname = "Taj Palace"
           hotelcity = "New Delhi"
-          hotelimage = "https://im.rediff.com/money/2012/jul/tajpalace.jpg"
+          hotelimage = "https://en.wikipedia.org/wiki/Taj_Mahal_Palace_Hotel#/media/File:Mumbai_Aug_2018_(43397784544).jpg"
           hoteldescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
           hoteladdress = "P.O. Box 283 8562 Fusce Rd Frederick Nebraska 20620"
         /><HotelTile

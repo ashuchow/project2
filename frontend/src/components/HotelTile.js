@@ -20,7 +20,9 @@ class HotelTile extends Component {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
+    <Link to="/bh">
      <Button variant="primary">Book</Button>
+    </Link>
     </Card.Footer>
   </Card>
   

@@ -30,7 +30,9 @@ const ResultFlight = () => {
 
   return (
     <div>
-    <h1>Show Flight Search Results</h1>
+    <div className = "header">
+    <h1>Flight Search Results</h1>
+    </div>
     <section>
       {flights.slice(0, 10).map((flight) => (
         <div key={flight.id}>
