@@ -3,13 +3,18 @@ import { Link } from 'react-router-dom';
 
 function userSignIn() {
     return (
+        <div>
+            <div className="header">
+          <h1>Sign-in</h1>
+        </div>
+
+          
         <div className = "form">
         <form onSubmit>
             <ul className = "form-container">
                 <li>
                     <h3>Sign In</h3>
                 </li>
-                <button><a href="http://localhost:5000/auth/google">Google+</a></button>
                 <li>
                     <label htmlFor= "email">
                         Email
@@ -27,7 +32,7 @@ function userSignIn() {
                     <button type ="submit" className= "button primary">Sign In</button>
                 </li>
                 <li>
-                    Do not have an account?
+                    Make New Account
                 </li>
                 <li>
                     <Link to = "/usu" className ="button secondary text-center">Create a new Account</Link>
@@ -39,6 +44,7 @@ function userSignIn() {
 
         </form>
 
+    </div>
     </div>
     )
 }

@@ -1,3 +1,4 @@
+  
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,7 +15,10 @@ import searchHotel from "./Screens/HotelsSearch";
 import Payment from "./Screens/PaymentScreen";
 import userProfile from "./Screens/UserProfile";
 import userSignIn from "./Screens/UserSignIn";
-
+import contactUs from "./Screens/Contact";
+import userSignUp from "./Screens/UserSignUp";
+import PaymentHotel from "./Screens/PaymentHotel";
+import HotelConfirm from "./Screens/HotelConfirm";
 function App() {
   return (
     <Router>
@@ -29,9 +33,13 @@ function App() {
           <Route path="/rh" component={resultHotel} />
           <Route path="/rf" component={ResultFlight} />
           <Route path="/cnf" component={Reservation} />
+          <Route path="/hcnf" component={HotelConfirm} />
           <Route path="/pymnt" component={Payment} />
+          <Route path="/hpymnt" component={PaymentHotel} />
           <Route path="/up" component={userProfile} />
           <Route path="/us" component={userSignIn} />
+          <Route path="/usu" component={userSignUp} />
+          <Route path="/cu" component={contactUs} />
         </Switch>
       </div>
     </Router>

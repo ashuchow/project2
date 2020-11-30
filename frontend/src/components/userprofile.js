@@ -6,7 +6,12 @@ import { Button } from "react-bootstrap";
 class Userprofile extends Component {
   render() {
     return (   
-         <div className="col-md-4">
+      <div>
+      <div className="header">
+          <h1>User Profile</h1>
+        </div>
+
+         <div>
       
     <div className="d-flex flex-column align-items-center text-center">
       <img className="float right" src={this.props.picture}alt="" className="img-fluid rounded shadow-sm"></img>
@@ -57,6 +62,7 @@ class Userprofile extends Component {
       </div>
       
       
+      </div>
       </div>
       
     );
