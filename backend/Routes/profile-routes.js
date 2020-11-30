@@ -1,17 +1,23 @@
 const router = require("express").Router();
 const User = require('../Models/user.model')
 
-const authCheck = (req, res, next) => {
-  if (!req.user) {
-    res.redirect("/auth/login");
-  } else {
-    next();
-  }
-};
+// const authCheck = (req, res, next) => {
+//   if (!req.user) {
+//     res.redirect("/auth/login");
+//   } else {
+//     next();
+//   }
+// };
 
-router.get("/", authCheck, (req, res) => {
-  //res.send('you are logged in, this is your profile - ' + req.user.username);
-  res.json(req.user);
+// router.get("/", authCheck, (req, res) => {
+//   //res.send('you are logged in, this is your profile - ' + req.user.username);
+//   res.json(req.user);
+// });
+
+router.route('/all').get((req, res) => {
+  User.find()
+    .then(users => res.json(users))
+    .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/add').post((req, res) => {

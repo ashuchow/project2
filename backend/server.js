@@ -14,7 +14,7 @@ app.use(express.json());
 
 
 const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true });
+mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true , useUnifiedTopology: true});
 const connection = mongoose.connection;
 connection.once("open", () => {
   console.log("MongoDB database connection established successfully");
@@ -23,13 +23,13 @@ connection.once("open", () => {
 
 
 //const flightsRouter = require("./Routes/flights");
-const usersRouter = require("./Routes/users");
+const profileRouter = require("./Routes/profile-routes");
 const hotelsRouter = require("./Routes/hotel-route")
 const amadeusRouter = require("./Routes/amadeus-routes")
 
 
 //app.use('/flights', flightsRouter)
-app.use('/users', usersRouter)
+app.use('/profile', profileRouter)
 app.use('/amadeus', hotelsRouter)
 app.use('/amadeus', amadeusRouter)
 
