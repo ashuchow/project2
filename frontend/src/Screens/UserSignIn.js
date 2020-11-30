@@ -9,6 +9,7 @@ function userSignIn() {
                 <li>
                     <h3>Sign In</h3>
                 </li>
+                <button><a href="http://localhost:5000/auth/google">Google+</a></button>
                 <li>
                     <label htmlFor= "email">
                         Email
