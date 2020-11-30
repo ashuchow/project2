@@ -22,13 +22,13 @@ connection.once("open", () => {
 
 
 
-const flightsRouter = require("./Routes/flights");
+//const flightsRouter = require("./Routes/flights");
 const usersRouter = require("./Routes/users");
 const hotelsRouter = require("./Routes/hotel-route")
 const amadeusRouter = require("./Routes/amadeus-routes")
 
 
-app.use('/flights', flightsRouter)
+//app.use('/flights', flightsRouter)
 app.use('/users', usersRouter)
 app.use('/amadeus', hotelsRouter)
 app.use('/amadeus', amadeusRouter)
@@ -36,3 +36,4 @@ app.use('/amadeus', amadeusRouter)
 app.listen(port, () => {
   console.log(`Server is running on ${port}`);
 });
+ 

@@ -10,7 +10,15 @@ const userSchema = new Schema({
     trim: true,
     minlength: 3
   },
-  googleId: String
+  googleId: String,
+  thumbnail: String,
+  phone: String,
+  address: String,
+  email: String,
+  currentHotel: Object,
+  currentFlight: Object,
+  transactionFlight: Array,
+  transactionHotel: Array,
 }, {
   timestamps: true,
 });
