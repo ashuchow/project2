@@ -5,7 +5,7 @@ import { Button, Card, Dropdown, DropdownButton, CardImg, Breadcrumb, Table } fr
 class HotelBookingTile extends Component {
   render() {
     return (
-      <div className = "book">
+      <>
 
           <Card>
          <Card.Img variant="top" src= {this.props.hotelimage} />
@@ -44,14 +44,14 @@ class HotelBookingTile extends Component {
   </Dropdown.Menu>
 </Dropdown>
         </Card.Text>
-        <Link  to="/hc">
+        <Link  to="/hpymnt">
         <Button variant="primary">Book</Button>
         </Link>
     </Card.Body>
     </Card>
   
     
-       </div>
+       </>
   
 
     );

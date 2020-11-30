@@ -64,7 +64,7 @@ const searchHotel = makeStyles((theme) => ({
             id="date"
             label="Checkout Date"
             type="date"
-            defaultValue="2020-05-24"
+            defaultValue="2020-05-25"
             className={classes.textField}
             InputLabelProps={{
             shrink: true,

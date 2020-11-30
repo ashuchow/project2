@@ -44,7 +44,7 @@ function userSignUp() {
                     <button type ="submit" className= "button primary">Sign In</button>
                 </li>
                 <li>
-                    Already have an account? <Link to = "/signin">Sign-IN</Link>
+                    Already have an account? <Link to = "/us">Sign-IN</Link>
                 </li>
                
 
