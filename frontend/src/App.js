@@ -9,8 +9,8 @@ import Navbar from "./Screens/navbar.component";
 import BookFlight from "./Screens/FlightBook";
 import searchFlight from "./Screens/FlightSearch";
 import ResultFlight from "./Screens/FlightResult";
-import bookHotel from "./Screens/HotelBook";
-import resultHotel from "./Screens/HotelResults";
+import BookHotel from "./Screens/HotelBook";
+import ResultHotel from "./Screens/HotelResults";
 import searchHotel from "./Screens/HotelsSearch";
 import Payment from "./Screens/PaymentScreen";
 import userProfile from "./Screens/UserProfile";
@@ -27,10 +27,10 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/bf" component={BookFlight} />
-          <Route path="/bh" component={bookHotel} />
+          <Route path="/bh" component={BookHotel} />
           <Route path="/sf" component={searchFlight} />
           <Route path="/sh" component={searchHotel} />
-          <Route path="/rh" component={resultHotel} />
+          <Route path="/rh" component={ResultHotel} />
           <Route path="/rf" component={ResultFlight} />
           <Route path="/cnf" component={Reservation} />
           <Route path="/hcnf" component={HotelConfirm} />

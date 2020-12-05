@@ -2,37 +2,36 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Table } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
 import HotelBookingTile from "../components/HotelBookingTile";
 
-class bookHotel extends Component {
-  render() {
-    return (
-      <div>
-        
-          
-        <div className="header">
-          <h1>Book Hotel</h1>
-        </div>
-        <div>
-        <HotelBookingTile
-          
-          hotelname = "Taj Palace"
-          hotelcity = "New Delhi"
-          hotelameneties = " Elevator, Parking, Pool, Free Breakfast"
-          hotelcontact = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          hotelprice = "1110"
-          hotelimage = "https://im.rediff.com/money/2012/jul/tajpalace.jpg"
-          hoteldescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          hoteladdress = "P.O. Box 283 8562 Fusce Rd Frederick Nebraska 20620"
-        />
-        
-        </div>
-
-    
-            
+function BookHotel() {
+  let hotel = useLocation().data;
+  console.log(hotel);
+  return (
+    <div>
+      <div className="header">
+        <h1>Book Hotel</h1>
       </div>
-    );
-  }
+      <div>
+        <HotelBookingTile
+          hotelname={hotel.hotel.name}
+          hotelcity={hotel.hotel.address.cityName}
+          hotelameneties={hotel.hotel.amenities}
+          hotelcontact={hotel.hotel.contact}
+          hotelprice={hotel.offers[0].price.total}
+          hoteldescription={
+            hotel.hotel.description ? hotel.hotel.description.text : ""
+          }
+          hoteladdress={hotel.hotel.address.lines[0]}
+          hotelpobox={hotel.hotel.address.postalCode}
+          hotelcurrency={hotel.offers[0].price.currency}
+          hotelrating={hotel.hotel.rating}
+          hotel={hotel}
+        />
+      </div>
+    </div>
+  );
 }
 
-export default bookHotel;
+export default BookHotel;

@@ -4,7 +4,8 @@ import { Table } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 //Template used
 function PaymentHotel() {
-  
+  let hotel = useLocation().data;
+  console.log(hotel);
   
   return (
     <div>
@@ -16,7 +17,7 @@ function PaymentHotel() {
       <div className="row mb-4">
         <div className="col-lg-8 mx-auto text-center">
           <h1 className="display-4">Payment Page</h1>
-          <h2 className="display-6">Total Price: Rs. 1100</h2>
+          <h2 className="display-6">Total Price: {hotel.offers[0].price.currency} {hotel.offers[0].price.total}</h2>
         </div>
       </div>
       <div className="row">
@@ -127,7 +128,7 @@ function PaymentHotel() {
                     </div>
                     <div className="card-footer">
                       {" "}
-                      <Link to="/hcnf">
+                      <Link to={{pathname: "/hcnf", data: hotel}}>
                         <button
                           type="button"
                           className="subscribe btn btn-primary btn-block shadow-sm"
@@ -176,7 +177,7 @@ function PaymentHotel() {
                     </div>
                     <div className="card-footer">
                       {" "}
-                      <Link to="/hcnf">
+                      <Link to={{pathname: "/hcnf", data: hotel}}>
                         <button
                           type="button"
                           className="subscribe btn btn-primary btn-block shadow-sm"
@@ -213,7 +214,7 @@ function PaymentHotel() {
                   </div>
                   <div className="form-group">
                     <p>
-                      <Link to= "/hcnf">
+                      <Link to={{pathname: "/hcnf", data: hotel}}>
                         <button type="button" className="btn btn-primary ">
                           <i className="fas fa-mobile-alt mr-2"></i> Proceed
                           Pyment
