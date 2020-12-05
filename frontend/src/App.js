@@ -11,7 +11,7 @@ import searchFlight from "./Screens/FlightSearch";
 import ResultFlight from "./Screens/FlightResult";
 import BookHotel from "./Screens/HotelBook";
 import ResultHotel from "./Screens/HotelResults";
-import searchHotel from "./Screens/HotelsSearch";
+import SearchHotel from "./Screens/HotelsSearch";
 import Payment from "./Screens/PaymentScreen";
 import userProfile from "./Screens/UserProfile";
 import userSignIn from "./Screens/UserSignIn";
@@ -29,7 +29,7 @@ function App() {
           <Route path="/bf" component={BookFlight} />
           <Route path="/bh" component={BookHotel} />
           <Route path="/sf" component={searchFlight} />
-          <Route path="/sh" component={searchHotel} />
+          <Route path="/sh" component={SearchHotel} />
           <Route path="/rh" component={ResultHotel} />
           <Route path="/rf" component={ResultFlight} />
           <Route path="/cnf" component={Reservation} />

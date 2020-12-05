@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Component } from "react";
-import { Link } from "react-router-dom";
+import { Link , useLocation} from "react-router-dom";
 import { Table } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import axios from "axios";
@@ -9,11 +9,14 @@ import Spinner from "../components/Spinner";
 const ResultHotel = () => {
   const [hotels, setHotels] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-
+  let city = useLocation().data.city;
+  let radius = useLocation().data.radius;
+  let inDate = useLocation().data.inDate;
+  let outDate = useLocation().data.outDate;
   useEffect(() => {
     const fetchHotels = async () => {
       const result = await axios.post(
-        "http://localhost:5000/amadeus/hotelsearch?city=LCY&radius=10&inDate=2020-12-12&outDate=2020-12-15"
+        `http://localhost:5000/amadeus/hotelsearch?city=${city}&radius=${radius}&inDate=${inDate}&outDate=${outDate}`
       );
       console.log(result.data.data);
       setHotels(result.data.data);
@@ -43,7 +46,9 @@ const ResultHotel = () => {
               hotelprice={hotel.offers[0].price.total}
               hotelcurrency={hotel.offers[0].price.currency}
               hotelcity={hotel.hotel.address.cityName}
-              hoteldescription={hotel.hotel.description ? hotel.hotel.description.text : ""}
+              hoteldescription={
+                hotel.hotel.description ? hotel.hotel.description.text : ""
+              }
               hoteladdress={hotel.hotel.address.lines[0]}
               hotelpobox={hotel.hotel.address.postalCode}
               hotel={hotel}
